@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam O’Sullivan | Junior Computer Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-gray-800 dark:text-white mb-8;
+        }
+        .card {
+            @apply bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 p-6;
+        }
+        .skill-tag {
+            @apply bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full dark:bg-blue-900 dark:text-blue-300;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-700 dark:text-gray-300">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white dark:bg-gray-800/50 backdrop-blur-sm sticky top-0 z-50 shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900 dark:text-white">Liam O’Sullivan</a>
+            <div class="hidden md:flex space-x-6 text-lg">
+                <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
+                <a href="#experience" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#contact" class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-900 dark:text-white">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-lg hover:text-blue-600 dark:hover:text-blue-400">About</a>
+            <a href="#experience" class="block py-2 text-lg hover:text-blue-600 dark:hover:text-blue-400">Experience</a>
+            <a href="#projects" class="block py-2 text-lg hover:text-blue-600 dark:hover:text-blue-400">Projects</a>
+            <a href="#skills" class="block py-2 text-lg hover:text-blue-600 dark:hover:text-blue-400">Skills</a>
+            <a href="#contact" class="block mt-2 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 text-center">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Hero Section -->
+        <section id="hero" class="text-center py-20">
+            <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4">Liam O’Sullivan</h1>
+            <p class="text-2xl text-blue-600 dark:text-blue-400 font-semibold mb-6">Junior Computer Engineer</p>
+            <p class="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-400 mb-8">
+                A driven Computer Engineering student at the University of Pittsburgh with a passion for bridging the gap between hardware and software. Experienced in system architecture, embedded systems, and full-stack development to create innovative and efficient solutions.
+            </p>
+            <div class="flex justify-center items-center space-x-6">
+                <a href="mailto:osullivanl240@gmail.com" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" aria-label="Email"><i data-lucide="mail" class="w-8 h-8"></i></a>
+                <a href="https://lao57.github.io" target="_blank" rel="noopener noreferrer" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" aria-label="GitHub"><i data-lucide="github" class="w-8 h-8"></i></a>
+                <a href="tel:475-323-0462" class="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors" aria-label="Phone"><i data-lucide="phone" class="w-8 h-8"></i></a>
+            </div>
+        </section>
+        
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <h2 class="section-title text-center">About Me</h2>
+            <div class="text-center mb-12">
+                <div class="space-y-4 text-lg max-w-3xl mx-auto text-gray-600 dark:text-gray-400">
+                    <p>At my core, I'm a problem-solver. I'm fascinated by the "why" behind how things work, a curiosity that led me to computer engineering and my love for physics.</p>
+                    <p>This passion extends beyond academics. I find a similar joy in the strategy of a volleyball match, the endurance of running a half-marathon, and the meticulous process of building high-performance computers from scratch.</p>
+                </div>
+             </div>
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <img src="IMG_4651.jpg" alt="Liam O'Sullivan" class="rounded-lg shadow-lg aspect-[3/4] object-cover w-full h-full">
+                <img src="IMG_4793.jpg" alt="Presenting research" class="rounded-lg shadow-lg aspect-[3/4] object-cover w-full h-full">
+                <img src="IMG_3231.jpg" alt="In the photonics lab" class="rounded-lg shadow-lg aspect-[3/4] object-cover w-full h-full">
+             </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="py-16">
+            <h2 class="section-title text-center">Professional Experience</h2>
+            <div class="relative border-l-2 border-blue-500 dark:border-blue-400 max-w-3xl mx-auto">
+                <!-- SIMIO LLC -->
+                <div class="mb-12 pl-12 relative">
+                    <div class="absolute -left-[0.8rem] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-100 dark:border-gray-900"></div>
+                    <p class="text-sm font-semibold text-gray-500 dark:text-gray-400">05/2025 - Present</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-1">System Engineer Intern · SIMIO LLC</h3>
+                    <ul class="mt-2 list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
+                        <li>Spearheaded development of a C# add-on integrating advanced Git version control.</li>
+                        <li>Applied robust system architecture design principles for a scalable solution.</li>
+                        <li>Participated in the full SDLC using Agile methodologies like Scrum.</li>
+                    </ul>
+                </div>
+                <!-- Undergrad Research Assistant -->
+                 <div class="mb-12 pl-12 relative">
+                    <div class="absolute -left-[0.8rem] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-100 dark:border-gray-900"></div>
+                    <p class="text-sm font-semibold text-gray-500 dark:text-gray-400">05/2024 - Present</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-1">Research Assistant · YOUNGBLOOD PHOTONICS</h3>
+                    <ul class="mt-2 list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
+                        <li>Worked alongside the UPMC Center of Vaccine Research.</li>
+                        <li>Designed and developed a bio-photonic research device.</li>
+                    </ul>
+                </div>
+                <!-- YOUNGBLOOD PHOTONICS INTERN -->
+                <div class="pl-12 relative">
+                    <div class="absolute -left-[0.8rem] top-1 w-6 h-6 bg-blue-500 rounded-full border-4 border-gray-100 dark:border-gray-900"></div>
+                    <p class="text-sm font-semibold text-gray-500 dark:text-gray-400">01/2024 - 05/2024</p>
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mt-1">System Engineer Intern · YOUNGBLOOD PHOTONICS</h3>
+                    <ul class="mt-2 list-disc list-inside space-y-1 text-gray-600 dark:text-gray-400">
+                        <li>Led development of research probe stations for testing silicon integrated photonic circuits.</li>
+                        <li>Designed solutions using PCB design and Autodesk CAD.</li>
+                        <li>Controlled lasers and motors via NI server communication.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-16">
+            <h2 class="section-title text-center">Key Projects</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Version Control API for SIMIO</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Engineered a C# add-on to enable robust version control for proprietary files, significantly improving team collaboration and project traceability.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">C#</span><span class="skill-tag">.NET</span><span class="skill-tag">Git</span><span class="skill-tag">System Architecture</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">EGFP Activating Bronchoscope</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Contributed to the full lifecycle, including software development, bug fixes, and physical device fabrication for a cutting-edge biophotonic device.</p>
+                     <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Device Fabrication</span><span class="skill-tag">Autodesk CAD</span><span class="skill-tag">C++</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Virtual Train Control Simulation</h3>
+                    <p class="text-gray-600 dark:text-gray-400 mb-4">Led a team of five students in a semester-long project to design and implement a detailed train control system simulation from the ground up.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">System Design</span><span class="skill-tag">C++</span><span class="skill-tag">Team Leadership</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-16">
+             <div class="container mx-auto px-6">
+                <h2 class="section-title text-center">Technical Skills</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Languages</h3>
+                        <p class="text-gray-600 dark:text-gray-400">C, C++, C#, Python, ARM Assembly, VHDL, MATLAB, JavaScript, HTML/CSS</p>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Tools & Frameworks</h3>
+                        <p class="text-gray-600 dark:text-gray-400">.NET, Quartus, ModelSim, Visual Studio, Altium, Autodesk CAD, Pycharm, Git, Keil v5</p>
+                    </div>
+                     <div class="card">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900 dark:text-white">Competencies</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Algorithm Design, Computer Architecture, Agile/Scrum, Digital & Analog Circuit Design, Embedded Systems</p>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-16">
+            <div class="text-center">
+                <h2 class="section-title">Education</h2>
+                <h3 class="text-2xl font-bold text-gray-900 dark:text-white">University of Pittsburgh</h3>
+                <p class="text-lg text-gray-600 dark:text-gray-400 mt-2">Bachelor of Science in Computer Engineering (Expected May 2026)</p>
+                <p class="text-lg font-semibold text-blue-600 dark:text-blue-400 mt-1">GPA: 3.67/4.0</p>
+                <p class="mt-4 text-gray-500 dark:text-gray-300">Dean's List Honoree: 2022, 2023, 2024, 2025</p>
+            </div>
+        </section>
+        
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4">Get In Touch</h2>
+            <p class="max-w-xl mx-auto mb-8">
+                I'm currently seeking new opportunities and am always open to connecting. Feel free to reach out via email or connect with me on social media.
+            </p>
+            <div class="flex justify-center items-center space-x-8 text-3xl">
+                 <a href="mailto:osullivanl240@gmail.com" class="hover:text-blue-400 transition-colors" aria-label="Email"><i data-lucide="mail"></i></a>
+                 <a href="https://lao57.github.io" target="_blank" rel="noopener noreferrer" class="hover:text-blue-400 transition-colors" aria-label="GitHub"><i data-lucide="github"></i></a>
+                 <a href="tel:475-323-0462" class="hover:text-blue-400 transition-colors" aria-label="Phone"><i data-lucide="phone"></i></a>
+            </div>
+             <div class="mt-10 border-t border-gray-700 pt-6">
+                 <p>&copy; <span id="year"></span> Liam O’Sullivan. All Rights Reserved.</p>
+             </div>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
